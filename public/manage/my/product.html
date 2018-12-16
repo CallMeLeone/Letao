@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+</head>
+
+<body>
+    <!-- 模态框 退出功能 -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                    <i class="glyphicon glyphicon-info-sign"></i>
+                    <span>您确定要退出后台管理系统吗？</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary btn-logout">退出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 左侧菜单栏开始 -->
+    <div class="left_aside">
+        <!-- 标题 -->
+        <header><a href="#">Leon</a></header>
+        <!-- 头像 -->
+        <div class="user_photo">
+            <img src="./images/1.jpg" alt="">
+            <p>Web Producer</p>
+        </div>
+        <!-- 导航菜单 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="user.html">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span>用户管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="category">
+                        <i class="glyphicon glyphicon-list"></i>
+                        <span>分类管理</span>
+                    </a>
+                    <div class="submenu">
+                        <a href="first.html">一级分类</a>
+                        <a href="second.html">二级分类</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <i class="glyphicon glyphicon-tags"></i>
+                        <span>商品管理</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 左侧菜单栏结束 -->
+
+    <!-- 右侧内容开始 -->
+    <div class="main">
+        <!-- 头部导航 -->
+        <header>
+            <a href="#" class="pull-left h_menu">
+                <i class="glyphicon glyphicon-align-justify"></i>
+            </a>
+            <a href="#" class="pull-right">
+                <i class="logout glyphicon glyphicon-log-out" data-toggle="modal" data-target=".bs-example-modal-sm"></i>
+            </a>
+        </header>
+        <div class="container-fluid">
+            <nav>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">管理系统</a></li>
+                    <li class="active">商品管理</li>
+                </ol>
+            </nav>
+        </div>
+
+    </div>
+    <!-- 右侧内容结束 -->
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/nprogress/nprogress.js"></script>
+    <script src="./lib/echarts/echarts.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/isLogin.js"></script>
+
+</body>
+
+</html>

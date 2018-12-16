@@ -1,0 +1,6 @@
+.container .col-lg-4 {
+    margin-top: 150px;
+}
+.container .col-lg-4 .panel-heading h3{
+    text-align: center;
+}

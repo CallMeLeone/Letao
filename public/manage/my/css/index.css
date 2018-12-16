@@ -1,0 +1,12 @@
+body{
+    height: 1000px;
+}
+
+#totalmembers{
+    width: 48%;
+    height: 400px;
+}
+#Sales{
+    width: 48%;
+    height: 400px;
+}
